@@ -16,8 +16,9 @@
 
 
 /**
+ * Insere o botão de download do curso selecionado.
  * 
- * @param {HTMLElement} elmCurso
+ * @param {HTMLElement} elmCurso elemento raiz do curso.
  */
 function inserirBotaoDownloadCurso(elmCurso) {
     const elmPorcentagem = elmCurso.querySelector('.textoPorcentagem');
@@ -32,8 +33,19 @@ function inserirBotaoDownloadCurso(elmCurso) {
 
 
 /**
+ * Executa o download do curso selecionado.
  * 
- * @param {HTMLElement} elmAula
+ * @param {HTMLElement} elmCurso elemento raiz do curso.
+ */
+function botaoDownloadCursoOnClick(elmCurso) {
+
+}
+
+
+/**
+ * Insere o botão de download da aula selecionada.
+ * 
+ * @param {HTMLElement} elmAula elemento raiz da aula.
  */
 function inserirBotaoDownloadAula(elmAula) {
     const elmLateral = elmAula.querySelector('.Collapse-header-side');
@@ -44,4 +56,14 @@ function inserirBotaoDownloadAula(elmAula) {
 
     elmLateral.insertAdjacentElement('beforebegin', botao403);
     return botao403;
+}
+
+
+/**
+ * Executa o download da aula selecionada.
+ * 
+ * @param {HTMLElement} elmAula elemento raiz da aula.
+ */
+function botaoDownloadAulaOnClick(elmAula) {
+
 }
